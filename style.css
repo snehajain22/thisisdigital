@@ -1,0 +1,540 @@
+@font-face {
+    font-family: "digital";
+    src: url("/CooperLtBTWXXLight.ttf");
+}
+
+@font-face {
+    font-family: "sansbook";
+    src: url("SequelSansDisplayBook.ttf");
+}
+
+@font-face {
+    font-family: "sans";
+    src: url("SequelSansDisplay.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    /* overflow-x: hidden; */
+    /* background-color: red; */
+}
+
+#nav {
+    padding-left: 30px;
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav h1 {
+    font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+#nav #navr {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid #717171;
+}
+
+#img1 {
+    margin-left: 125px;
+    width: 23%;
+    height: 73%;
+    background-color: pink;
+    background-image: url("https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-75.jpg?w=1200&h=1731&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631017685&s=333b9abfa858cf7b8685e28a597dfa08");
+    background-size: cover;
+}
+
+#img2 {
+    position: absolute;
+    top: 18%;
+    left: 59%;
+    width: 16.5%;
+    height: 30%;
+    background-color: yellow;
+    background-image: url("https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-23.jpg?w=1200&h=1008&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631003343&s=88354e145206a527c989b49f760a89d3");
+    background-size: cover;
+}
+
+#img3 {
+    position: absolute;
+    top: 51.5%;
+    left: 72.5%;
+    width: 17%;
+    height: 40%;
+    background-color: blue;
+    background-image: url("https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-81.jpg?w=1200&h=1200&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631005177&s=21e4c0bb5ce83f57e69f404637d61265");
+    background-size: cover;
+}
+
+#main #textcenter {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+}
+
+#main p {
+    margin-top: 50px;
+    font-family: "digital";
+    font-size: 80px;
+    margin-bottom: 50px;
+    z-index: 9999;
+}
+
+#solutiongreenline {
+    top: 74%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 20px;
+    background-image: url("https://thisisdigital.co.uk/dist/images/underline-green.svg");
+}
+
+.find {
+    /* background-color: yellow; */
+    width: 29%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 260px;
+}
+
+.find h2 {
+    font-family: "sansbook";
+    font-weight: 100;
+}
+
+.box {
+    position: relative;
+    width: 70px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid grey;
+    overflow: hidden;
+    z-index: 98888;
+}
+
+.box i {
+    /* z-index: -10; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    z-index: 99;
+    font-weight: 100;
+}
+
+.opening {
+    top: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #00EB8F;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#black {
+    width: 100%;
+    height: 73%;
+    background-color: black;
+    /* position: absolute; */
+    /* top:100%; */
+    margin-top: 120px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#circletext {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #717171; */
+}
+
+#circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00EB8F;
+}
+
+#black h3 {
+    font-family: "sans";
+    font-weight: 100;
+}
+
+#black h1 {
+    margin-top: 40px;
+    font-family: "digital";
+    font-size: 47px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+#aboutdiv {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutdiv h2 {
+    font-weight: 100;
+}
+
+#circleondifferent {
+    position: absolute;
+    width: 210px;
+    height: 70px;
+    top: 53%;
+    left: 42%;
+}
+
+#page3 {
+    /* background-color: pink; */
+    width: 98.9vw;
+    /* height: 120vh; */
+    display: flex;
+}
+
+#leftpage3 {
+    display: flex;
+    gap: 2vw;
+    width: 50vw;
+    /* height: 120vh; */
+    /* background-color: red; */
+
+}
+
+#box1,
+#box2 {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #00EB8F; */
+    gap: 5vh;
+}
+
+#box1 #img4 {
+    width: 11.5vw;
+    height: 77vh;
+}
+
+#box1 #img5 {
+    width: 11.5vw;
+    height: 35vh;
+}
+
+#box2 #img6 {
+    width: 27vw;
+    height: 36vh;
+}
+
+#box2 #img7 {
+    width: 36vw;
+    height: 88vh;
+}
+
+#rightpage3 {
+    padding: 6vw;
+    width: 50vw;
+    font-family: "sans";
+    color: #262626;
+    /* background-color: blue; */
+}
+
+#rightpage3 h1 {
+    margin-top: 18vh;
+    font-family: "digital";
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#rightpage3 p {
+    font-size: 18px;
+    font-family: "sans";
+    color: #262626;
+    line-height: 35px;
+    word-spacing: 3px;
+}
+
+.boxdiv {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+#pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    /* background-image: url("https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/team/Team-Transparent/Nouri-Messaoud-2.png?w=400&h=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1634030846&s=944b7a533ea72d26afc37cdf33752fd9");
+    object-fit: cover;
+    object-position: center; */
+}
+
+.boxdiv h2 {
+    font-size: 23px;
+    font-weight: 100;
+}
+
+#services {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    color: #262626;
+    font-family: "sans";
+    font-weight: 100;
+    /* background-color: pink; */
+    padding: 10px;
+}
+
+#services i {
+    font-size: 20px;
+}
+
+#page4 {
+    font-family: "digital";
+    width: 98.9vw;
+    /* height: 100vh; */
+    /* background-color: pink; */
+}
+
+#page4 h1 {
+    font-weight: 100;
+    text-align: center;
+    padding-top: 8vw;
+    font-size: 52px;
+    padding-bottom: 5vw;
+}
+
+#page4 .row {
+    padding: 0 15vw;
+    padding-bottom: 5vw;
+    width: 100%;
+    display: flex;
+    gap: 3.5vw;
+    justify-content: center;
+}
+
+#page4 .row img {
+    width: 13vw;
+    padding: 12px 32px;
+}
+
+#page5 {
+    width: 98.9vw;
+    height: 120vh;
+    background-color: pink;
+
+}
+
+#div {
+    display: flex;
+    padding: 8vw 7vw;
+    justify-content: center;
+    gap: 2.5vw;
+    overflow: hidden;
+}
+
+.zoom {
+    width: 40vw;
+    height: 63vh;
+    background-color: red;
+    font-family: "digital";
+    color: white;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.zoom img {
+    padding: 2.5vw 0;
+    width: 10vw;
+    margin-bottom: 5vw;
+}
+
+#div #one {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/Golf.jpeg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1635867985&s=5e7cee6801a656523b56b64a34d04786");
+}
+
+#div #two {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/work-thumbnail-03.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1627573623&s=efbebf8d2134c057c66886c970e18069");
+}
+
+
+.zoom #img2nd {
+    margin-bottom: 8vw;
+}
+
+.zoom>h2 {
+    font-size: 40px;
+}
+
+.zoom #view {
+    width: 18vw;
+    margin-top: 3vh;
+    margin-left: 0;
+
+}
+
+#page5 .boxdiv {
+    display: flex;
+    justify-content: center;
+    font-family: "sans";
+}
+
+#page5 #services {
+    padding: 10px 20px;
+}
+
+#page6 {
+    width: 98.9vw;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+
+.swiper {
+    width: 80%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    /* display: -webkit-box; */
+    /* display: -ms-flexbox; */
+    /* display: -webkit-flex; */
+    /* display: flex; */
+    /* -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+}
+
+/* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+.swiper-slide img{
+    margin-top: 5vw;
+    width: 150px;
+    height: 50px;
+}
+.swiper-slide #fifth{
+    width: 80px;
+    height: 80px;
+}
+#slidderbox{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+    font-family: "sans";
+    font-weight: 100;
+}
+#greencircle{
+    width: 15px;
+    height: 15px;
+    background-color:#00EB8F;
+    border-radius: 50%;
+}
+.swiper-slide>h4{
+    color: #717171;
+    font-family: "sans";
+}
+#page7{
+    margin-top: 20vh;
+    width: 98.9vw;
+    /* height: 100vh; */
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#page7 #lastimg{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    gap:2vw;
+    justify-content: center;
+    background-color: red;
+    text-align: center;
+    width: 67vw;
+    height: 47vh;
+    font-size: 1.8vw;
+    font-family: "sans";
+    color: #fff;
+    z-index: 9999999;
+}
+#lastimg h3{
+    font-weight: 100;
+}
+#page7 .boxdiv h3{
+    color: white;
+}
+#page7 .boxdiv #services{
+    width: 200px;
+    font-weight: 100;
+    border: 1px solid white;
+}
+#blackdiv{
+    width: 98.9vw;
+    height: 96vh;
+    background-color: black;
+    margin-top: -20vh;
+}
